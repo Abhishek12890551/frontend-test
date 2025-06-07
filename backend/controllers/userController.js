@@ -13,13 +13,17 @@ export const registerUser = async (req, res) => {
         message: "User already exists",
       });
     }
-
     const newUser = new User({ name, email, password });
     await newUser.save();
+
+    const token = jwt.sign({ id: newUser._id }, process.env.JWT_SECRET, {
+      expiresIn: "30d",
+    });
 
     res.status(201).json({
       success: true,
       message: "User registered successfully",
+      token,
       user: {
         id: newUser._id,
         name: newUser.name,
