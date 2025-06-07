@@ -1,5 +1,3 @@
-<div align="center">
-
 # 🚀 Frontend Project
 
 ### A modern, responsive React application with TypeScript
@@ -14,8 +12,6 @@
 _An interactive onboarding wizard and dashboard showcasing advanced UI/UX patterns with smooth animations and beautiful, modern design._
 
 [🎯 Live Demo](#) • [📖 Documentation](#) • [� Report Bug](#) • [💡 Request Feature](#)
-
-</div>
 
 ---
 
@@ -74,8 +70,6 @@ _An interactive onboarding wizard and dashboard showcasing advanced UI/UX patter
 
 ## 🏗️ Tech Stack
 
-<div align="center">
-
 ### Core Framework
 
 [![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=flat-square&logo=react)](https://reactjs.org/)
@@ -98,8 +92,6 @@ _An interactive onboarding wizard and dashboard showcasing advanced UI/UX patter
 
 [![ESLint](https://img.shields.io/badge/ESLint-9.25.0-4B32C3?style=flat-square&logo=eslint)](https://eslint.org/)
 [![TypeScript ESLint](https://img.shields.io/badge/TS_ESLint-8.30.1-000000?style=flat-square)](https://typescript-eslint.io/)
-
-</div>
 
 ## � Project Architecture
 
@@ -159,17 +151,17 @@ _An interactive onboarding wizard and dashboard showcasing advanced UI/UX patter
 
 <table>
 <tr>
-<td align="center">
+<td>
 <img src="https://nodejs.org/static/images/logo.svg" width="50">
 <br><strong>Node.js 18+</strong>
 <br><a href="https://nodejs.org/">Download</a>
 </td>
-<td align="center">
+<td>
 <img src="https://www.npmjs.com/static/images/npm-logo.svg" width="50">
 <br><strong>npm/yarn</strong>
 <br>Package Manager
 </td>
-<td align="center">
+<td>
 <img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" width="50">
 <br><strong>Git</strong>
 <br><a href="https://git-scm.com/">Download</a>
@@ -238,8 +230,6 @@ node --version  # Should be 18.0+
 
 ## 📸 Application Preview
 
-<div align="center">
-
 ### 🏠 Landing Page
 
 <img src="./screenshots/landing-page.png" alt="Landing Page" width="600">
@@ -252,17 +242,17 @@ _Modern hero section with interactive elements and smooth animations_
 
 <table>
 <tr>
-<td align="center">
+<td>
 <img src="./screenshots/onboarding-step1.png" alt="Step 1" width="250">
 <br><strong>Step 1: Personal Info</strong>
 <br><em>Data collection with validation</em>
 </td>
-<td align="center">
+<td>
 <img src="./screenshots/onboarding-step2.png" alt="Step 2" width="250">
 <br><strong>Step 2: Business Details</strong>
 <br><em>Company information gathering</em>
 </td>
-<td align="center">
+<td>
 <img src="./screenshots/onboarding-step3.png" alt="Step 3" width="250">
 <br><strong>Step 3: Preferences</strong>
 <br><em>Theme and layout configuration</em>
@@ -277,8 +267,6 @@ _Modern hero section with interactive elements and smooth animations_
 <img src="./screenshots/dashboard.png" alt="Dashboard" width="600">
 
 _Comprehensive analytics with charts, metrics, and real-time data_
-
-</div>
 
 ## 🎯 Key Features Deep Dive
 
@@ -357,17 +345,17 @@ The build process:
 
 <table>
 <tr>
-<td align="center">
+<td>
 <strong>Vercel</strong><br>
 <code>npm i -g vercel</code><br>
 <code>vercel --prod</code>
 </td>
-<td align="center">
+<td>
 <strong>Netlify</strong><br>
 Drag & drop <code>dist/</code><br>
 or connect Git repo
 </td>
-<td align="center">
+<td>
 <strong>GitHub Pages</strong><br>
 <code>npm run build</code><br>
 Upload <code>dist/</code> folder
@@ -430,8 +418,6 @@ git push origin feature/amazing-feature
 
 ## 📞 Support & Community
 
-<div align="center">
-
 ### 💬 Get Help
 
 [![GitHub Issues](https://img.shields.io/badge/GitHub-Issues-red?style=for-the-badge&logo=github)](../../issues)
@@ -443,22 +429,10 @@ For direct inquiries, suggestions, or collaboration opportunities:
 
 [![Email](https://img.shields.io/badge/Email-mintu12890551%40gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mintu12890551@gmail.com)
 
-### 🌟 Show Your Support
-
-If this project helped you, please consider giving it a ⭐ on GitHub!
-
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/frontend-test&type=Date)](https://star-history.com/#yourusername/frontend-test&Date)
-
-</div>
-
 ---
-
-<div align="center">
 
 **Built with ❤️ using React, TypeScript, and modern web technologies**
 
 [![Made with React](https://img.shields.io/badge/Made%20with-React-61DAFB?style=flat-square&logo=react)](https://reactjs.org/)
 [![Made with TypeScript](https://img.shields.io/badge/Made%20with-TypeScript-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![Made with Vite](https://img.shields.io/badge/Made%20with-Vite-646CFF?style=flat-square&logo=vite)](https://vitejs.dev/)
-
-</div>
