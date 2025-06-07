@@ -2,46 +2,46 @@
 
 A RESTful API backend built with Node.js and Express.js for managing user authentication and preferences with dashboard functionality.
 
-##  Tech Stack Used
+## Tech Stack Used
 
--  Runtime : Node.js
--  Framework : Express.js
--  Database : MongoDB with Mongoose ODM
--  Authentication : JWT (JSON Web Tokens)
--  Password Hashing : bcryptjs
--  Validation : Joi
--  Environment Variables : dotenv
--  CORS : Cross-Origin Resource Sharing enabled
--  Development : Nodemon for auto-restart
+- Runtime : Node.js
+- Framework : Express.js
+- Database : MongoDB with Mongoose ODM
+- Authentication : JWT (JSON Web Tokens)
+- Password Hashing : bcryptjs
+- Validation : Joi
+- Environment Variables : dotenv
+- CORS : Cross-Origin Resource Sharing enabled
+- Development : Nodemon for auto-restart
 
-##  Features
+## Features
 
--  User Authentication 
+- User Authentication
 
-  - User registration with email validation
-  - User login with JWT token generation
-  - Protected routes with JWT middleware
-  - Password hashing with bcryptjs
+- User registration with email validation
+- User login with JWT token generation
+- Protected routes with JWT middleware
+- Password hashing with bcryptjs
 
--  User Profile Management 
+- User Profile Management
 
-  - Get user profile information
-  - Update user profile details
-  - Input validation with Joi schemas
+- Get user profile information
+- Update user profile details
+- Input validation with Joi schemas
 
--  Preferences System 
+- Preferences System
 
-  - Save and retrieve user preferences
-  - Widget-based dashboard configuration
-  - Dashboard summary endpoint
-  - Position and size management for widgets
+- Save and retrieve user preferences
+- Widget-based dashboard configuration
+- Dashboard summary endpoint
+- Position and size management for widgets
 
--  Security Features 
-  - JWT-based authentication
-  - Password encryption
-  - Input validation and sanitization
-  - CORS protection
-  - Error handling middleware
+- Security Features
+- JWT-based authentication
+- Password encryption
+- Input validation and sanitization
+- CORS protection
+- Error handling middleware
 
 ## 🛠️ Setup Instructions
 
@@ -55,86 +55,86 @@ Make sure you have the following installed:
 
 ### Installation Steps
 
-1.  Clone the repository 
+1.  Clone the repository
 
     bash
-   git clone <repository-url>
-   cd backend
-    
+    git clone <repository-url>
+    cd backend
 
-2.  Install dependencies 
+2.  Install dependencies
 
     bash
-   npm install
-    
+    npm install
 
-3.  Environment Configuration 
+3.  Environment Configuration
 
-   Create a `.env` file in the root directory and add the following variables:
+Create a `.env` file in the root directory and add the following variables:
 
     env
-   # Server Configuration
-   PORT=3000
 
-   # Database Configuration
-   MONGODB_URI=mongodb://localhost:27017/your_database_name
-   # OR for MongoDB Atlas:
-   # MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/database_name
+# Server Configuration
 
-   # JWT Configuration
-   JWT_SECRET=your_super_secret_jwt_key_here
-   
-    
+PORT=3000
 
-4.  Start MongoDB 
+# Database Configuration
 
-   If using local MongoDB:
+MONGODB_URI=mongodb://localhost:27017/your_database_name
 
-    bash
-   mongod
-    
+# OR for MongoDB Atlas:
 
-   If using MongoDB Atlas, ensure your connection string is correct in the `.env` file.
+# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/database_name
 
-5.  Run the application 
+# JWT Configuration
 
-   For development (with auto-restart):
+JWT_SECRET=your_super_secret_jwt_key_here
+
+4.  Start MongoDB
+
+If using local MongoDB:
 
     bash
-   npm run dev
-    
 
-   For production:
+mongod
+
+If using MongoDB Atlas, ensure your connection string is correct in the `.env` file.
+
+5.  Run the application
+
+For development (with auto-restart):
 
     bash
-   npm start
-    
+
+npm run dev
+
+For production:
+
+    bash
+
+npm start
 
 The server will start on `http://localhost:3000` (or the port specified in your `.env` file).
 
 ## 📂 Project Structure
 
- 
 backend/
 ├── config/
-│   └── db.js                 # Database configuration
+│ └── db.js # Database configuration
 ├── controllers/
-│   ├── userController.js     # User authentication & profile logic
-│   └── preferencesController.js # Preferences management logic
+│ ├── userController.js # User authentication & profile logic
+│ └── preferencesController.js # Preferences management logic
 ├── middleware/
-│   └── authMiddleware.js     # JWT authentication middleware
+│ └── authMiddleware.js # JWT authentication middleware
 ├── models/
-│   ├── userModel.js          # User schema definition
-│   └── preferencesModel.js   # Preferences schema definition
+│ ├── userModel.js # User schema definition
+│ └── preferencesModel.js # Preferences schema definition
 ├── routes/
-│   ├── userRoute.js          # User-related endpoints
-│   └── preferencesRoute.js   # Preferences-related endpoints
+│ ├── userRoute.js # User-related endpoints
+│ └── preferencesRoute.js # Preferences-related endpoints
 ├── utils/
-│   └── validation.js         # Joi validation schemas
-├── package.json              # Project dependencies
-├── server.js                 # Main application entry point
-└── README.md                 # Project documentation
- 
+│ └── validation.js # Joi validation schemas
+├── package.json # Project dependencies
+├── server.js # Main application entry point
+└── README.md # Project documentation
 
 ## 🔌 API Endpoints
 
@@ -162,32 +162,30 @@ backend/
 
 ### Example Request/Response
 
- Register User: 
+Register User:
 
- bash
+bash
 POST /api/register
 Content-Type: application/json
 
 {
-  "name": "John Doe",
-  "email": "john@example.com",
-  "password": "password123"
+"name": "John Doe",
+"email": "john@example.com",
+"password": "password123"
 }
- 
 
- Response: 
+Response:
 
- json
+json
 {
-  "success": true,
-  "message": "User registered successfully",
-  "user": {
-    "id": "6843cd402663e209076a5e4b",
-    "name": "John Doe",
-    "email": "john@example.com"
-  }
+"success": true,
+"message": "User registered successfully",
+"user": {
+"id": "6843cd402663e209076a5e4b",
+"name": "John Doe",
+"email": "john@example.com"
 }
- 
+}
 
 ## 🔧 Development
 
@@ -199,11 +197,11 @@ Content-Type: application/json
 
 ### Environment Variables
 
-| Variable         | Description                | Required | Default |
-| ---------------- | -------------------------- | -------- | ------- |
-| `PORT`           | Server port number         | No       | 3000    |
-| `MONGODB_URI`    | MongoDB connection string  | Yes      | -       |
-| `JWT_SECRET`     | Secret key for JWT signing | Yes      | -       |
+| Variable      | Description                | Required | Default |
+| ------------- | -------------------------- | -------- | ------- |
+| `PORT`        | Server port number         | No       | 3000    |
+| `MONGODB_URI` | MongoDB connection string  | Yes      | -       |
+| `JWT_SECRET`  | Secret key for JWT signing | Yes      | -       |
 
 ## 🧪 Testing
 
@@ -218,33 +216,39 @@ To test the API endpoints, you can use tools like:
 
 ### API Testing with Postman
 
-1.  User Registration 
-   - Screenshot of successful user registration
+1.  User Registration
 
-2.  User Login 
-   - Screenshot of successful login with JWT token
-3.  Protected Route Access 
-   - Screenshot of accessing protected routes with JWT
-4.  Preferences Management 
-   - Screenshot of saving and retrieving preferences
+- Screenshot of successful user registration
+  ![alt text](<Screenshot 2025-06-07 105549-1.png>)
 
-### Database Structure
+2.  User Login
 
-_Note: Add screenshots of your MongoDB collections here_
+- Screenshot of successful login with JWT token
+  ![alt text](<Screenshot 2025-06-07 110334.png>)
 
-1.  Users Collection 
-   - Screenshot of user documents in MongoDB
-2.  Preferences Collection 
-   - Screenshot of preferences documents in MongoDB
+3.  Protected Route Access
+
+- Screenshot of accessing protected routes with JWT
+  ![alt text](<Screenshot 2025-06-07 110431.png>)
+
+4.  Preferences Management
+
+- Screenshot of retrieving preferences
+  ![alt text](<Screenshot 2025-06-07 110519.png>)
+
+5.  Dashboard Summary
+
+- Screenshot of the accessing the dashboard with token
+  ![alt text](<Screenshot 2025-06-07 110620.png>)
 
 ## 🚨 Error Handling
 
 The API includes comprehensive error handling:
 
--  400 Bad Request : Invalid input data
--  401 Unauthorized : Missing or invalid JWT token
--  404 Not Found : Resource not found
--  500 Internal Server Error : Server-side errors
+- 400 Bad Request : Invalid input data
+- 401 Unauthorized : Missing or invalid JWT token
+- 404 Not Found : Resource not found
+- 500 Internal Server Error : Server-side errors
 
 ## 🔒 Security Considerations
 
@@ -254,4 +258,4 @@ The API includes comprehensive error handling:
 - CORS enabled for cross-origin requests
 - Environment variables for sensitive data
 
- Happy Coding! 🚀 
+Happy Coding! 🚀
