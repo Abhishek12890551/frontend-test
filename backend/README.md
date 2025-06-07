@@ -86,12 +86,10 @@ Ensure you have the following installed:
    PORT=3000
 
    # Database Configuration
-   MONGODB_URI=mongodb://localhost:27017/your_database_name
-   # OR for MongoDB Atlas:
-   # MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/database_name
+   MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/database_name
 
    # JWT Configuration
-   JWT_SECRET=your_super_secret_jwt_key_here
+   JWT_SECRET=mysecretkey
    ```
 
 4. **Start MongoDB**
