@@ -236,68 +236,19 @@ Content-Type: application/json
 
 </details>
 
-## � Development
+## 📸 Screenshots
 
-### 📜 Available Scripts
+### 🎯 API in Action
 
-| Script          | Command       | Description                                |
-| --------------- | ------------- | ------------------------------------------ |
-| **Start**       | `npm start`   | 🚀 Start the production server             |
-| **Development** | `npm run dev` | 🔧 Start development server with nodemon   |
-| **Test**        | `npm test`    | 🧪 Run tests _(currently not implemented)_ |
+Here are visual demonstrations of the API endpoints working with Postman:
 
-### 🔧 Environment Variables
-
-| Variable      | Description                | Required | Default | Example                           |
-| ------------- | -------------------------- | -------- | ------- | --------------------------------- |
-| `PORT`        | Server port number         | ❌ No    | `3000`  | `3000`                            |
-| `MONGODB_URI` | MongoDB connection string  | ✅ Yes   | -       | `mongodb://localhost:27017/myapp` |
-| `JWT_SECRET`  | Secret key for JWT signing | ✅ Yes   | -       | `your_super_secret_key`           |
-
-> ⚠️ **Important:** Never commit your `.env` file to version control!
-
-## 🧪 Testing the API
-
-### 🛠️ Recommended Testing Tools
-
-| Tool                                                 | Platform     | Description                   |
-| ---------------------------------------------------- | ------------ | ----------------------------- |
-| [**Postman**](https://www.postman.com/)              | Desktop/Web  | Most popular API testing tool |
-| [**Insomnia**](https://insomnia.rest/)               | Desktop      | Lightweight REST client       |
-| [**Thunder Client**](https://www.thunderclient.com/) | VS Code      | Extension for VS Code         |
-| **cURL**                                             | Command Line | Terminal-based testing        |
-
-### 📱 API Testing Screenshots
-
-<details>
-<summary><strong>📊 View API Testing Screenshots</strong></summary>
-
-#### 🔄 User Registration
-
-_Screenshot of successful user registration_
-![User Registration](Screenshot%202025-06-07%20105549-1.png)
-
-#### 🔑 User Login
-
-_Screenshot of successful login with JWT token_
-![User Login](Screenshot%202025-06-07%20110334.png)
-
-#### 🔒 Protected Route Access
-
-_Screenshot of accessing protected routes with JWT_
-![Protected Routes](Screenshot%202025-06-07%20110431.png)
-
-#### ⚙️ Preferences Management
-
-_Screenshot of retrieving preferences_
-![Preferences](Screenshot%202025-06-07%20110519.png)
-
-#### 📊 Dashboard Summary
-
-_Screenshot of accessing the dashboard with token_
-![Dashboard](Screenshot%202025-06-07%20110620.png)
-
-</details>
+| Feature               | Screenshot                                              | Description                                 |
+| --------------------- | ------------------------------------------------------- | ------------------------------------------- |
+| **User Registration** | ![Registration](Screenshot%202025-06-07%20105549-1.png) | New user registration with email validation |
+| **User Login**        | ![Login](Screenshot%202025-06-07%20110334.png)          | User authentication with JWT token response |
+| **Profile Access**    | ![Profile](Screenshot%202025-06-07%20110431.png)        | Accessing protected user profile endpoint   |
+| **Preferences**       | ![Preferences](Screenshot%202025-06-07%20110519.png)    | Managing user preferences and settings      |
+| **Dashboard**         | ![Dashboard](Screenshot%202025-06-07%20110620.png)      | Dashboard summary with authentication       |
 
 ## 🚨 Error Handling
 
@@ -370,7 +321,7 @@ If you have any questions or need help, please:
 
 ### 🚀 Happy Coding!
 
-Made with ❤️ by the Development Team
+Made with ❤️
 
 ![Node.js](https://img.shields.io/badge/Node.js-Ready-green?style=flat-square)
 ![MongoDB](https://img.shields.io/badge/MongoDB-Connected-brightgreen?style=flat-square)
